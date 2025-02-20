@@ -1,4 +1,4 @@
-package ru.ryboman.demoJavaFX;
+package ru.ryaboman.demoJavaFX;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

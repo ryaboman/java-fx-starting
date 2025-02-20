@@ -1,4 +1,4 @@
-module ru.ryboman.demoJavaFX {
+module ru.ryaboman {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.web;
@@ -11,6 +11,9 @@ module ru.ryboman.demoJavaFX {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
 
-    opens ru.ryboman.demoJavaFX to javafx.fxml;
-    exports ru.ryboman.demoJavaFX;
+    opens ru.ryaboman.demoJavaFX to javafx.fxml;
+    exports ru.ryaboman.demoJavaFX;
+
+    opens ru.ryaboman.javaFX.testButtons to javafx.fxml;
+    exports ru.ryaboman.javaFX.testButtons;
 }
