@@ -16,4 +16,7 @@ module ru.ryaboman {
 
     opens ru.ryaboman.javaFX.testButtons to javafx.fxml;
     exports ru.ryaboman.javaFX.testButtons;
+
+    opens ru.ryaboman.javaFX.DocSystem to javafx.fxml;
+    exports ru.ryaboman.javaFX.DocSystem;
 }

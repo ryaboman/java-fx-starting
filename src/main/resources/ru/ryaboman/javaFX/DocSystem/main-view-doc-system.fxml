@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="654.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.ryaboman.javaFX.DocSystem.MainController">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="Файл">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Сервис">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Справка">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <SplitPane cache="true" dividerPositions="0.5882352941176471" orientation="VERTICAL" prefHeight="308.0" prefWidth="386.0">
+               <items>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="364.0">
+                     <children>
+                        <TextField prefHeight="26.0" prefWidth="322.0" />
+                        <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="168.0" text="Button" />
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </HBox>
+                  <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+                    <items>
+                        <TabPane prefHeight="200.0" prefWidth="419.0" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                            <Tab text="Недавние">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="56.0" prefWidth="364.0" />
+                              </content>
+                            </Tab>
+                            <Tab text="Избранное">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                              </content>
+                            </Tab>
+                          </tabs>
+                        </TabPane>
+                        <Pane prefHeight="106.0" prefWidth="469.0" />
+                    </items>
+                  </SplitPane>
+               </items>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </SplitPane>
+         </children>
+      </VBox>
+   </children>
+</VBox>
