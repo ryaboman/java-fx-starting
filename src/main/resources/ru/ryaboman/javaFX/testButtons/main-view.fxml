@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="ru.ryaboman.javaFX.testButtons.MainController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
-
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
-
+<SplitPane dividerPositions="0.5" maxHeight="500.0" maxWidth="500.0" orientation="VERTICAL" prefHeight="173.0" prefWidth="419.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.ryaboman.javaFX.testButtons.MainController">
+   <items>
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <center>
+             <Label fx:id="welcomeText" alignment="CENTER" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <center>
+             <Button alignment="CENTER" cache="true" contentDisplay="TOP" depthTest="DISABLE" onAction="#onHelloButtonClick" prefHeight="118.0" prefWidth="189.0" text="Hello!" BorderPane.alignment="CENTER">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor></Button>
+         </center>
+      </BorderPane>
+   </items>
+</SplitPane>
